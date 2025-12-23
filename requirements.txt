@@ -1,14 +1,24 @@
+# LangGraph core packages
 langgraph
 langgraph-prebuilt
 langgraph-sdk
 langgraph-checkpoint-sqlite
-langsmith
+langgraph-cli[inmem]
+
+# LangChain core packages (required for notebooks)
 langchain-community
 langchain-core
 langchain-openai
-notebook
 langchain-tavily
+
+# LangSmith for tracing and observability
+langsmith
+
+# Jupyter notebook support
+notebook
+
+# Additional tools and integrations
 wikipedia
 trustcall
-langgraph-cli[inmem]
+dashscope  # Required for Alibaba Tongyi Qwen models
 
