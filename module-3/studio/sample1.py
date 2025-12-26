@@ -146,6 +146,7 @@ async def main():
         if event["event"] == "on_chat_model_stream" and event.get("metadata", {}).get("langgraph_node", "") == node_to_stream:
             # 从事件数据中提取 chunk 内容并实时打印
             data = event.get("data", {})
+            print(data)
             chunk = data.get("chunk")
             if chunk and hasattr(chunk, 'content'):
                 chunk_content = chunk.content
